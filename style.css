@@ -9,8 +9,10 @@ html {
 }
 
 body {
-  display: grid;
+  display: flex;
   place-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 label {
@@ -18,21 +20,15 @@ label {
 }
 
 .container {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   display: grid;
   border: solid black 2px;
   background-color: antiquewhite;
   height: 720px;
   width: 720px;
-  /* display: flex;
-  flex-direction: column;
-  gap: 20px; */
 }
 
 .selection-box {
-  margin: 20px 0 20px 0;
+  margin: 20px 0 0 0;
 }
 
 .box {
@@ -47,12 +43,10 @@ label {
 
 .reset {
   border: none;
-  padding: 12px 50px;
+  padding: 8px 30px;
   background-color: #ccc;
   font-size: 20px;
   cursor: pointer;
-  position: absolute;
-  top: 90%;
 }
 
 .start {
@@ -68,20 +62,12 @@ label {
     width: 920px;
     height: 920px;
   }
-
-  .reset {
-    top: 90%;
-  }
 }
 
 @media (max-width: 1920px) {
   .container {
     width: 720px;
     height: 720px;
-  }
-
-  .reset {
-    top: 90%;
   }
 }
 
@@ -90,19 +76,11 @@ label {
     width: 720px;
     height: 720px;
   }
+}
 
-  .reset {
-    top: 90%;
-  }
-
-  @media (max-width: 1366px) {
-    .container {
-      width: 560px;
-      height: 560px;
-    }
-  
-    .reset {
-      top: 88%;
-    }
+@media (max-width: 1366px) {
+  .container {
+    width: 560px;
+    height: 560px;
   }
 }
