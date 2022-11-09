@@ -11,8 +11,7 @@ let contents = [];
 let numRows;
 let numCells;
 
-// Upon clicking the "Draw" create the board
-start.addEventListener('click', function() {
+const begin =  function() {
   contents.forEach(content => content.remove());
   contents = [];
   numRows = Number(input.value);
@@ -36,7 +35,16 @@ start.addEventListener('click', function() {
   }
 
   input.value = '';
-})
+}
+
+// Upon clicking the "Draw" create the board
+start.addEventListener('click', begin);
+document.addEventListener('keydown', function(e) {
+  console.log(e.key);
+  if (e.key === 'Enter') {
+    begin();
+  }
+});
 
 // Clears the board
 reset.addEventListener('click', function() {
