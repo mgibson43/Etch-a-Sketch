@@ -18,15 +18,15 @@ label {
   display: grid;
   border: solid black 2px;
   background-color: antiquewhite;
-  height: 860px;
-  width: 860px;
+  height: 720px;
+  width: 720px;
   /* display: flex;
   flex-direction: column;
   gap: 20px; */
 }
 
 .selection-box {
-  margin: 100px 0 20px 0;
+  margin: 0px 0 20px 0;
 }
 
 .box {
@@ -46,7 +46,7 @@ label {
   font-size: 20px;
   cursor: pointer;
   position: absolute;
-  top: 85%;
+  top: 90%;
 }
 
 .start {
@@ -55,4 +55,26 @@ label {
   background-color: #ccc;
   font-size: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    width: 720px;
+    height: 720px;
+  }
+
+  .reset {
+    top: 90%;
+  }
+
+  @media (max-width: 1366px) {
+    .container {
+      width: 560px;
+      height: 560px;
+    }
+  
+    .reset {
+      top: 90%;
+    }
+  }
 }
