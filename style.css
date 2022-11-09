@@ -63,6 +63,28 @@ label {
   cursor: pointer;
 }
 
+@media (max-width: 2560px) {
+  .container {
+    width: 920px;
+    height: 920px;
+  }
+
+  .reset {
+    top: 90%;
+  }
+}
+
+@media (max-width: 1920px) {
+  .container {
+    width: 720px;
+    height: 720px;
+  }
+
+  .reset {
+    top: 90%;
+  }
+}
+
 @media (max-width: 1600px) {
   .container {
     width: 720px;
@@ -80,7 +102,7 @@ label {
     }
   
     .reset {
-      top: 82%;
+      top: 88%;
     }
   }
 }
